@@ -11,7 +11,7 @@ while [[ true ]]; do
 	x="${array[0]}"
 	y="${array[1]}"
 	if [[ $x -ne $oldx || $y -ne $oldy ]]; then
-		./stop.sh
+		./stop.sh "$1"
 		exit 0
 	fi
 
