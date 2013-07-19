@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sleep 1
-
+sleep 2
+echo "3,2,1 -> GO"
+cd $HOME/antispy/
 ./catchmouse.sh "$$" &
 key=`./keyboard "/dev/input/event3"`
 
